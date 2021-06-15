@@ -1,0 +1,468 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 15px;
+    color: white;
+    overflow-x: hidden;
+    min-height: 90vh;
+    background-color: #00008b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+  }
+
+h1 {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 150;
+    color: white;
+}
+h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 150;
+    color: white;
+}
+h3 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 150;
+    color: white;
+}
+h4 {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 150;
+    color: white;
+}
+@media (min-width:992px){ /* Моб.пристрій*/
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 33px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .lead{
+        font-size: 19px;
+    }
+}
+
+.mini{
+    max-width: 680px;
+    width: 100%;
+    min-height: 70vh;  
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: white;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.main{
+    font-size: 16px;
+    color: #808080;
+    font-weight: 300;
+}
+@media (min-width:992px){ /* Моб.пристрій*/
+    .lead{
+        font-size: 19px;
+    }
+}
+
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    border-radius: 20px;
+    padding: 5px 35px;
+    transition: 0.1s linear;
+}
+
+.btn-primary {
+    background-color:limegreen;
+    color: white;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.btn-primary:hover {
+    background-color: #6de28a;
+    transform: translate3d(0, -2px, 0);
+}
+.btn-primarys {
+    padding: 25px;
+    border: 1px solid limegreen;
+    border-radius: 25px;
+    color: limegreen;
+    
+}
+.btn-primarys:hover {
+    background-color: #6de28a;
+    transform: translate3d(0, -2px, 0);
+}
+
+
+.navbar > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 66px;
+    z-index: 2;
+
+}
+
+
+.brand img {   /* Форма заполнения */
+    max-width: 200px;
+}
+/*167 - 194 навбар(шапка) РАБОТАЕТ НЕ ТРОГАТЬ! */
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.navbar-nav li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: .3;
+    letter-spacing: .5px;
+    transition: opacity .3s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar-nav li a:hover {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    opacity: 2;
+}
+@media (max-width: 500px){
+    .brand{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+        margin-bottom: 10px;
+    }
+    .brand img {
+        max-width: 130px;
+    }
+    .navbar-nav{
+        margin: 0 auto;
+    }
+}
+
+
+.second{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.second::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    opacity: 50%;
+}
+.second .container{ /*растянутая картинка форма! */
+    position: relative;
+    max-width: 800px;
+}
+
+.second h1{
+    margin-bottom: 24px;
+    color:white;
+}
+.second p{
+    margin-bottom: 35px;
+    font-weight: 300;
+    opacity: .8;
+    color: white;
+}
+.third{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+.third::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    opacity: 50%;
+}
+.third .container{
+    position: relative;
+    max-width: 800px;
+}
+
+.third h1{
+    margin-bottom: 24px;
+    color:#fff;
+}
+
+/* 280-375 для вида основного тела как на макете Не трогать!!!*/
+.services {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+}
+.service-col {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+.service {
+    padding: 25px;
+    
+    
+}
+.service img {
+    opacity: .6;
+    max-width: 70px;
+    margin-bottom: 24px;
+}
+.service h4 {
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.service p {
+    max-width: 280px;
+    margin: 0 auto 30px auto;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (min-width: 768px){
+    .service-col {
+        max-width: 33%;
+        width: 100%;
+    }
+}
+
+.split-section {    /*Не работает разобраться!!! */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.split-section__image{
+    order: -1;
+    margin-bottom: 40px;
+}
+.split-section__image,
+.split-section__text{
+    max-width: 100%;
+    width: 100%;
+}
+.split-section h2,
+.split-section p {
+    margin-bottom: 30px;
+}
+@media (min-width:768px){
+    .split-section{
+        margin-left:  auto;
+        margin-right: auto;
+    }
+    .split-section__image{
+        order:initial;
+        margin-bottom: 0;
+    }
+    .split-section__image,
+    .split-section__text{
+        max-width: 50%;
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
+img.columnsImg{
+    width: 250px;
+    height: 250px;
+}
+
+.split-section h2{
+    margin-bottom: 24px;
+    color:#fff;
+}
+.split-section p{
+    margin-bottom: 35px;
+    font-weight: 300;
+    opacity: .8;
+    color: #fff;
+}
+
+/*Футер */
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.copyright {
+    opacity: 6;
+}
+.social {
+    display: flex;
+    list-style: none;
+    align-items:center;
+}
+.social li {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.social a{
+    opacity: 6;
+}
+.social a:hover {
+    opacity: 1;
+}
+
+table,td{
+    table-layout: fixed;
+    text-align: center;
+    font-size: 8px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden; 
+}
+td:nth-child(1) { 
+    color: cornflowerblue;
+}
+td:nth-child(2) {
+    color: darkgray;
+}
+td:nth-child(3) {
+    color: darkseagreen;
+    
+}
+
+
+@font-face {
+    font-family: 'Circe';
+    src: url('/fonts/Circe-ExtraBold.eot');
+    src: local('☺'), url('/fonts/Circe-ExtraBold.woff') format('woff'), url('/fonts/Circe-ExtraBold.ttf') format('truetype'), url('/fonts/Circe-ExtraBold.svg') format('svg');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe';
+    src: url('/fonts/Circe-Bold.eot');
+    src: local('☺'), url('/fonts/Circe-Bold.woff') format('woff'), url('/fonts/Circe-Bold.ttf') format('truetype'), url('/fonts/Circe-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe';
+    src: url('/fonts/Circe.eot');
+    src: local('☺'), url('/fonts/Circe.woff') format('woff'), url('/fonts/Circe.ttf') format('truetype'), url('/fonts/Circe.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe';
+    src: url('/fonts/Circe-Light.eot');
+    src: local('☺'), url('/fonts/Circe-Light.woff') format('woff'), url('/fonts/Circe-Light.ttf') format('truetype'), url('/fonts/Circe-Light.svg') format('svg');
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe';
+    src: url('/fonts/Circe-ExtraLight.eot');
+    src: local('☺'), url('/fonts/Circe-ExtraLight.woff') format('woff'), url('/fonts/Circe-ExtraLight.ttf') format('truetype'), url('/fonts/Circe-ExtraLight.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+@media screen and (min-device-height: 0px)
+  and (max-device-height: 550px) {
+    .header{
+    background: url("http://drive.google.com/uc?export=view&id=1kccTT3fAYWYzooNXxAavBvg7Hb7QIldg") no-repeat;
+    background-size: cover;
+    padding-bottom: 75%;
+}
